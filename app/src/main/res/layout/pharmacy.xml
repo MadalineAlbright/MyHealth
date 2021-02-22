@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="215dp"
+        android:background="@drawable/emergency_frame"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/myphamacy"
+                android:layout_width="198dp"
+                android:layout_height="172dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="109dp"
+                android:layout_marginTop="42dp"
+                android:layout_marginEnd="104dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/pharmacy" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="389dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="2dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.099"
+        tools:style="@style/CardView"
+        app:cardCornerRadius="8dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/mypost_image"
+                android:layout_width="48dp"
+                android:layout_height="59dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="328dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_aide" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="192dp"
+                android:layout_height="33dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="122dp"
+                android:layout_marginBottom="54dp"
+                android:fontFamily="@font/roboto_italic"
+                android:text="My Medicine"
+                android:textColor="#100F0F"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="172dp"
+                android:layout_height="33dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="136dp"
+                android:layout_marginBottom="13dp"
+                android:text="Click for more info" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="391dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="276dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.046">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/myimage"
+            android:layout_width="48dp"
+            android:layout_height="59dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="330dp"
+            android:layout_marginBottom="19dp"
+            android:src="@drawable/ic_aide" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="214dp"
+            android:layout_height="37dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="83dp"
+            android:layout_marginBottom="47dp"
+            android:fontFamily="@font/roboto_italic"
+            android:text="Locate nearest Pharmacy"
+            android:textColor="#100F0F"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="172dp"
+            android:layout_height="33dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="122dp"
+            android:layout_marginBottom="19dp"
+            android:text="Click for more info" />
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

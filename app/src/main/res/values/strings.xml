@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MyHealth</string>
+    <string name="welcome_doctor">Welcome Doctor</string>
+    <string name="how_we_can_help_you_oday">How we can help you oday?</string>
+    <string name="medicine">Medicine</string>
+    <string name="first_aid">First Aid</string>
+    <string name="todo">TODO</string>
+    <string name="emergency">Emergency</string>
+    <string name="appointment">Appointment</string>
+    <string name="blood_bank">Blood Bank</string>
+    <string name="doctor">Doctor</string>
+    <string name="home">Home</string>
+    <string name="welcome_user">Welcome User</string>
+    <string name="select_your_option">Select your option</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
+</resources>

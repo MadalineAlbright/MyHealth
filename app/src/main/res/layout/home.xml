@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <Button
+        android:id="@+id/doctor"
+        android:layout_width="118dp"
+        android:layout_height="107dp"
+        android:background="@drawable/circle_background"
+        android:fontFamily="@font/roboto_italic"
+        android:gravity="bottom|center"
+        android:paddingBottom="8dp"
+        android:text="@string/doctor"
+        android:textAllCaps="false"
+        android:textColor="#0D0C10"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.857" />
+
+    <Button
+        android:id="@+id/medicine"
+        android:layout_width="118dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/circle_background"
+        android:fontFamily="@font/roboto_italic"
+        android:gravity="bottom|center"
+        android:paddingBottom="8dp"
+        android:text="@string/medicine"
+        android:textAllCaps="false"
+        android:textColor="#0D0C10"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <Button
+        android:id="@+id/appointement"
+        android:layout_width="126dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="168dp"
+        android:background="@drawable/circle_background"
+        android:fontFamily="@font/roboto_italic"
+        android:gravity="bottom|center"
+        android:paddingBottom="8dp"
+        android:text="@string/appointment"
+        android:textAllCaps="false"
+        android:textColor="#0D0C10"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <Button
+        android:id="@+id/Emergency"
+        android:layout_width="116dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/circle_background"
+        android:fontFamily="@font/roboto_italic"
+        android:gravity="bottom|center"
+        android:paddingBottom="8dp"
+        android:text="@string/emergency"
+        android:textAllCaps="false"
+        android:textColor="#0D0C10"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <Button
+        android:id="@+id/first_aid"
+        android:layout_width="118dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/circle_background"
+        android:fontFamily="@font/roboto_italic"
+        android:gravity="bottom|center"
+        android:paddingBottom="8dp"
+        android:text="@string/first_aid"
+        android:textAllCaps="false"
+        android:textColor="#0D0C10"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+    <Button
+        android:id="@+id/blood_bank"
+        android:layout_width="118dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginBottom="83dp"
+        android:background="@drawable/circle_background"
+        android:fontFamily="@font/roboto_italic"
+        android:gravity="bottom|center"
+        android:paddingBottom="8dp"
+        android:text="@string/blood_bank"
+        android:textAllCaps="false"
+        android:textColor="#0D0C10"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/doctor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="215dp"
+        android:background="@drawable/rectangle_round"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/home_text"
+                android:layout_width="0dp"
+                android:layout_height="21dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="31dp"
+                android:layout_marginBottom="178dp"
+                android:gravity="center"
+                android:text="@string/home"
+                android:textColor="#ffffff"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/patientName"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="118dp"
+                android:layout_marginBottom="163dp"
+                android:text="@string/welcome_user"
+                android:textColor="#ffffff"
+                android:textSize="26sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/myhome"
+                android:layout_width="178dp"
+                android:layout_height="158dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="107dp"
+                android:layout_marginTop="62dp"
+                android:layout_marginEnd="126dp"
+                android:layout_marginBottom="-6dp"
+                android:src="@drawable/doc2" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginBottom="40dp"
+        android:elevation="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/first_aid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat=""
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="51dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="383dp"
+        android:elevation="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.062"
+        app:srcCompat="@mipmap/ic_amb"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="44dp"
+        android:layout_height="41dp"
+        android:elevation="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.388"
+        app:srcCompat=""
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        android:elevation="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.592"
+        app:srcCompat=""
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
+        android:elevation="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.932"
+        app:srcCompat=""
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
+        android:elevation="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.784"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.896"
+        app:srcCompat=""
+        android:contentDescription="@string/todo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
